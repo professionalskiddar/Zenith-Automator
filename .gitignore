@@ -1,0 +1,7 @@
+config.json
+channels.json
+delay.txt
+__pycache__/
+dist/
+build/
+*.spec
