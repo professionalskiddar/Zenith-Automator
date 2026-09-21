@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google SEO Meta Tags -->
+    <title>Zenith Automator | Discord Message Mirroring Tool & Trade Alert Copier</title>
+    <meta name="description" content="Free open-source Discord automation tool to mirror messages, forward trading alerts, and clone charts to multiple channels with anti-detection human timing jitter.">
+    <meta name="keywords" content="discord automation, message forwarder, message mirror, alert copier, trade alerts, discord selfbot, python gui, requests">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Premium Dark Theme Layout Styles -->
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-blue: #0070f3;
+            --accent-green: #2ecc71;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+            color: var(--text-main);
+        }
+        .badge {
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 15px auto 0 auto;
+        }
+        .btn-container {
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: opacity 0.2s;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1-fraction));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        .screenshot-container {
+            text-align: center;
+            margin: 50px 0;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        pre {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            color: #ff79c6;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+        }
+        .cmd { color: #50fa7b; }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--accent-blue); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="badge">⚡ OPEN SOURCE DISCORD AUTOMATION</div>
+        <h1>Zenith Automator</h1>
+        <p class="tagline">High-speed Discord message mirroring tool and trade alert forwarder. Copy text and graphics across multi-channel environments instantly.</p>
+        
+        <div class="btn-container">
+            <a href="https://github.com" class="btn">🚀 Download (.EXE)</a>
+            <a href="https://github.com" class="btn btn-secondary">💻 View Source Code</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>✨ Premium Core Features</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🚀 Multi-Channel Sync</h3>
+                <p>Monitor specific private source channels and instantly distribute payloads to multiple destination hubs simultaneously.</p>
+            </div>
+            <div class="card">
+                <h3>🕒 Human-Jitter Timing</h3>
+                <p>Introduces an automated 1–5 second "fuzzing" delay structure on top of default cooldown limits to naturally replicate real human behavior profiles.</p>
+            </div>
+            <div class="card">
+                <h3>🖼️ Attachment Cloning</h3>
+                <p>Automatically isolates, replicates, and forwards raw text content, embedded formatting, graphics, and trade charts natively.</p>
+            </div>
+            <div class="card">
+                <h3>🌙 Custom Dark GUI</h3>
+                <p>Features a custom, frameless design environment with an interactive diagnostic log terminal for deep connection status mapping.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Image Search Injection Point -->
+    <section class="screenshot-container">
+        <h2>📊 Application User Interface</h2>
+        <img src="https://github.com" alt="Zenith Automator Discord Message Mirroring GUI App and Trading Alert Forwarder Console Interface">
+    </section>
+
+    <section>
+        <h2>🛠️ Advanced Developers Setup</h2>
+        <p>If you prefer to run the core source layout explicitly via Python, follow these terminal installation steps:</p>
+        <pre><code><span class="cmd">git clone</span> https://github.com.git
+<span class="cmd">cd</span> Zenith-Automator
+<span class="cmd">pip install</span> requests Pillow pystray
+<span class="cmd">python</span> main.py</code></pre>
+    </section>
+
+    <footer>
+        <p>Zenith Automator is independent open-source software. Star the project on <a href="https://github.com">GitHub</a>.</p>
+    </footer>
+</div>
+
+</body>
+</html>
