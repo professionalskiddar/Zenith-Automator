@@ -15,6 +15,9 @@ Whether you are copying crypto/stock trading signals or managing community annou
 - **🔝 Always-on-Top Mode**: Keeps the GUI controller visible on your desktop at all times so you can monitor cycles and real-time status updates.
 - **💻 Interactive Developer Console**: Features an integrated terminal for real-time logging, connection debugging, and command-line control.
 
+- <img width="614" height="715" alt="{23192BAC-0315-4B20-962E-7C1160F419EF}" src="https://github.com/user-attachments/assets/09216ddf-10df-471d-8a84-edcf2defde03" />
+
+
 ## 🛠️ Installation & Prerequisites
 
 ### Technical Requirements
