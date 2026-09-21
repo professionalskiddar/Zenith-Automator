@@ -55,5 +55,5 @@ Whether you are copying crypto/stock trading signals or managing community annou
 - Click the **Start** button to engage the background listener loop. 
 - *Note: Open-source safety notice—this code is 100% transparent and open-source. Because it interacts with system UI windows and background threads, Windows Defender may occasionally throw a false-positive malware flag during initial setup.*
 
-
+Please consider starring this if it helped you in anyway to help other people find it, thanks!
 
