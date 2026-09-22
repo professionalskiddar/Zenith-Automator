@@ -76,11 +76,14 @@
             padding: 12px 24px;
             border-radius: 6px;
             font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
             transition: opacity 0.2s;
         }
         .btn:hover { opacity: 0.9; }
 
-        /* OFFICIAL GITHUB COUNTER BUTTONS */
+        /* GITHUB COUNTER BUTTONS */
         .github-btn-group {
             display: flex;
             gap: 4px;
@@ -114,6 +117,57 @@
             font-weight: 600;
             margin-right: 2px;
         }
+
+        /* MODAL STYLING */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+        .modal-content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .modal-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+        .modal-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .modal-btn {
+            display: block;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+        .btn-sure { background-color: var(--accent-blue); color: white; }
+        .btn-fork { background-color: #21262d; color: #c9d1d9; border: 1px solid var(--border-color); }
+        .btn-no { background-color: transparent; color: var(--text-muted); }
+        .btn-sure:hover { opacity: 0.9; }
+        .btn-fork:hover { background-color: #30363d; }
+        .btn-no:hover { color: #fff; }
 
         .grid {
             display: grid;
@@ -169,6 +223,18 @@
 </head>
 <body>
 
+    <!-- MODAL PROMPT -->
+    <div id="support-modal" class="modal-overlay">
+        <div class="modal-content">
+            <p>Support this project by starring it? This motivates the developer and helps people find this page!</p>
+            <div class="modal-btns">
+                <a href="https://github.com/professionalskiddar/Zenith-Automator" target="_blank" class="modal-btn btn-sure" onclick="closeModal()">Sure!</a>
+                <a href="https://github.com/professionalskiddar/Zenith-Automator/forks" target="_blank" class="modal-btn btn-fork" onclick="closeModal()">Maybe I'll fork it</a>
+                <button class="modal-btn btn-no" onclick="closeModal()">No thanks</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <header>
             <div class="badge">⚡ OPEN SOURCE DISCORD AUTOMATION</div>
@@ -176,7 +242,8 @@
             <p class="tagline">High-speed Discord message mirroring tool and trade alert forwarder. Copy text and graphics across multi-channel environments instantly.</p>
             
             <div class="btn-container">
-                <a href="#" class="btn">🚀 Download (.EXE)</a>
+                <!-- CHANGED TO FUNCTION CALL -->
+                <button onclick="handleDownload()" class="btn">🚀 Download (.EXE)</button>
                 
                 <div class="github-btn-group">
                     <a href="https://github.com/professionalskiddar/Zenith-Automator" target="_blank" class="github-btn">
@@ -185,7 +252,7 @@
                     </a>
                     <a href="https://github.com/professionalskiddar/Zenith-Automator/forks" target="_blank" class="github-btn">
                         <svg viewBox="0 0 16 16"><path d="M4.75 3.75c0-.414.336-.75.75-.75h4.5c.414 0 .75.336.75.75v4.5c0 .414-.336.75-.75.75h-4.5c-.414 0-.75-.336-.75-.75v-4.5zm6.75 6.75a.75.75 0 00-1.5 0v-4.5c0-.414.336-.75.75-.75h4.5c.414 0 .75.336.75.75v4.5c0 .414-.336.75-.75.75h-4.5z"></path><path d="M2 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H2.75A.75.75 0 012 12.75z"></path></svg>
-                        <span id="forks-count" class="count-num">...</span> Fork
+                        <span id="forks-count" class="count-num">...</span> Forks
                     </a>
                 </div>
             </div>
@@ -239,6 +306,18 @@
     </div>
 
     <script>
+        // MODAL LOGIC
+        function handleDownload() {
+            // 1. Start download (Replace '#' with actual .exe link)
+            window.open('#', '_blank'); 
+            // 2. Show prompt
+            document.getElementById('support-modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('support-modal').style.display = 'none';
+        }
+
+        // GITHUB API LOGIC
         async function updateGitHubStats() {
             const repo = 'professionalskiddar/Zenith-Automator';
             try {
