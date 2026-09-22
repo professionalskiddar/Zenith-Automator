@@ -83,7 +83,6 @@
         }
         .btn:hover { opacity: 0.9; }
 
-        /* GITHUB COUNTER BUTTONS */
         .github-btn-group {
             display: flex;
             gap: 4px;
@@ -118,7 +117,6 @@
             margin-right: 2px;
         }
 
-        /* MODAL STYLING */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -210,9 +208,33 @@
             font-size: 0.9rem;
         }
         .cmd { color: #50fa7b; }
+
+        /* LICENSE SECTION STYLING */
+        .license-section {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: left;
+        }
+        .license-section h2 {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .license-text {
+            font-family: "SFMono-Regular", Consolas, monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+
         footer {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid var(--border-color);
             color: var(--text-muted);
@@ -223,7 +245,6 @@
 </head>
 <body>
 
-    <!-- MODAL PROMPT -->
     <div id="support-modal" class="modal-overlay">
         <div class="modal-content">
             <p>Support this project by starring it? This motivates the developer and helps people find this page!</p>
@@ -282,7 +303,6 @@
 
             <section class="screenshot-container">
                 <h2>📊 Application User Interface</h2>
-                <!-- IMAGE NOW POINTS TO THE REPO FILE -->
                 <img src="screenshot.png" alt="Zenith Automator Interface">
             </section>
 
@@ -295,6 +315,41 @@
 <span class="cmd">python</span> main.py</code></pre>
             </section>
         </main>
+
+        <!-- LICENSE SECTION -->
+        <section class="license-section">
+            <h2>📜 License</h2>
+            <div class="license-text">PROFESSIONALSKIDDARS OPEN-SOURCE LICENSE
+
+Copyright (c) 2026 professionalskiddar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, SUBJECT TO THE FOLLOWING CONDITIONS:
+
+1. ATTRIBUTION: The above copyright notice and this permission notice shall 
+   be included in all copies or substantial portions of the Software. 
+   Credit must be given to professionalskiddar as the original author.
+
+2. NON-COMMERCIAL USE ONLY: The Software is provided for free, and it must 
+   remain free. You may NOT sell the Software, charge a fee for its 
+   distribution, or incorporate it into a paid product or service. 
+   Commercialization of any kind is strictly prohibited.
+
+3. OPEN MODIFICATION: You are encouraged to fork, edit, and improve the code. 
+   However, any redistributed version of the Software must also remain free 
+   and carry this same license.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE.</div>
+        </section>
 
         <div style="text-align: center; margin-bottom: 30px;">
             <a href="https://professionalskiddar.pages.dev/" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">← Back to Main Portfolio</a>
