@@ -1,6 +1,6 @@
-# ⚡ Zenith Automator | Discords Best Message Forwarder
+# ⚡ Zenith Automator | Discords Best Message Automator
 
-**Zenith Automator** is a high-speed Discord message mirroring tool and alert copier. It is designed to automatically monitor a specific private source channel and instantly forward trading alerts, text, and visual charts to one or multiple destination channels or servers. 
+**Zenith Automator** is a high-speed Discord message mirroring tool. It is designed to automatically monitor a specific private source channel and instantly forward files, text, and visual charts to one or multiple destination channels or servers. 
 
 
 Whether you are copying crypto/stock trading signals or managing community announcements, Zenith Automator handles real-time cross-channel communication seamlessly.
