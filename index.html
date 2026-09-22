@@ -12,6 +12,15 @@
     <!-- CANONICAL LINK -->
     <link rel="canonical" href="https://professionalskiddar.github.io/Zenith-Automator/" />
 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Zenith Automator | Discord Message Mirroring Tool & Trade Alert Copier</title>
+    <link rel="canonical" href="https://professionalskiddar.github.io/Zenith-Automator/" />
+
     <style>
         :root {
             --bg-color: #0d1117;
@@ -64,6 +73,11 @@
         }
         .btn-container {
             margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
         .btn {
             display: inline-block;
@@ -73,7 +87,6 @@
             padding: 12px 24px;
             border-radius: 6px;
             font-weight: 600;
-            margin: 0 10px;
             transition: opacity 0.2s;
         }
         .btn-secondary {
@@ -84,6 +97,39 @@
         .btn:hover {
             opacity: 0.9;
         }
+
+        /* --- OFFICIAL GITHUB BUTTON STYLES --- */
+        .github-btn-group {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #21262d; 
+            color: #c9d1d9 !important;
+            border: 1px solid #30363d;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 6px;
+            text-decoration: none !important;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .github-btn:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+            color: #ffffff !important;
+        }
+        .github-btn svg {
+            fill: currentColor;
+            width: 14px;
+            height: 14px;
+        }
+        /* --- END GITHUB STYLES --- */
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -144,6 +190,80 @@
     </style>
 </head>
 <body>
+
+    <div class="container">
+        <header>
+            <div class="badge">⚡ OPEN SOURCE DISCORD AUTOMATION</div>
+            <h1>Zenith Automator</h1>
+            <p class="tagline">High-speed Discord message mirroring tool and trade alert forwarder. Copy text and graphics across multi-channel environments instantly.</p>
+            
+            <div class="btn-container">
+                <a href="#" class="btn">🚀 Download (.EXE)</a>
+                
+                <!-- OFFICIAL GITHUB BUTTONS -->
+                <div class="github-btn-group">
+                    <a href="https://github.com/professionalskiddar/Zenith-Automator" target="_blank" class="github-btn">
+                        <svg viewBox="0 0 16 16"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.33l-3.894 3.779.98 4.957a.75.75 0 01-1.15.66l-4.12-3.46-4.12 3.46a.75.75 0 01-1.15-.66l.98-4.957-3.894-3.779a.75.75 0 01.416-1.33l4.21-.612L7.327.668a.75.75 0 01.673-.418z"></path></svg>
+                        Star
+                    </a>
+                    <a href="https://github.com/professionalskiddar/Zenith-Automator/forks" target="_blank" class="github-btn">
+                        <svg viewBox="0 0 16 16"><path d="M4.75 3.75c0-.414.336-.75.75-.75h4.5c.414 0 .75.336.75.75v4.5c0 .414-.336.75-.75.75h-4.5c-.414 0-.75-.336-.75-.75v-4.5zm6.75 6.75a.75.75 0 00-1.5 0v-4.5c0-.414.336-.75.75-.75h4.5c.414 0 .75.336.75.75v4.5c0 .414-.336.75-.75.75h-4.5z"></path><path d="M2 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H2.75A.75.75 0 012 12.75z"></path></svg>
+                        Fork
+                    </a>
+                </div>
+                <!-- END GITHUB BUTTONS -->
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2 style="text-align: center;">✨ Premium Core Features</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>🚀 Multi-Channel Sync</h3>
+                        <p>Monitor specific private source channels and instantly distribute payloads to multiple destination hubs simultaneously.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🕒 Human-Jitter Timing</h3>
+                        <p>Introduces an automated 1–5 second "fuzzing" delay structure on top of default cooldown limits to naturally replicate real human behavior profiles.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🖼️ Attachment Cloning</h3>
+                        <p>Automatically isolates, replicates, and forwards raw text content, embedded formatting, graphics, and trade charts natively.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌙 Custom Dark GUI</h3>
+                        <p>Features a custom, frameless design environment with an interactive diagnostic log terminal for deep connection status mapping.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="screenshot-container">
+                <h2>📊 Application User Interface</h2>
+                <img src="https://github.com/user-attachments/assets/9d7c9e91-a132-477a-b19c-7297ba7ec07c" alt="Zenith Automator Interface">
+            </section>
+
+            <section>
+                <h2>🛠️ Advanced Developers Setup</h2>
+                <p>If you prefer to run the core source layout explicitly via Python, follow these terminal installation steps:</p>
+                <pre><code><span class="cmd">git clone</span> https://github.com/professionalskiddar/Zenith-Automator
+<span class="cmd">cd</span> Zenith-Automator
+<span class="cmd">pip install</span> requests Pillow pystray
+<span class="cmd">python</span> main.py</code></pre>
+            </section>
+        </main>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="https://professionalskiddar.pages.dev/" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">← Back to Main Portfolio</a>
+        </div>
+
+        <footer>
+            <p>Zenith Automator is independent open-source software. <a href="https://github.com/professionalskiddar/Zenith-Automator">Star the project on GitHub</a>.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
 
     <div class="container">
         <header>
