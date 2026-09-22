@@ -307,9 +307,17 @@
     <script>
         // MODAL LOGIC
         function handleDownload() {
-            // 1. Start download with the CORRECT link
-            window.open('https://github.com/professionalskiddar/Zenith-Automator/releases/download/Download/ZenithAutomator.exe', '_blank'); 
-            // 2. Show prompt
+            const downloadUrl = 'https://github.com/professionalskiddar/Zenith-Automator/releases/download/Download/ZenithAutomator.exe';
+            
+            // Create a ghost link that downloads the file without opening a new tab
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.setAttribute('download', '');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Show prompt
             document.getElementById('support-modal').style.display = 'flex';
         }
         function closeModal() {
