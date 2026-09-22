@@ -282,7 +282,8 @@
 
             <section class="screenshot-container">
                 <h2>📊 Application User Interface</h2>
-                <img src="https://github.com/user-attachments/assets/9d7c9e91-a132-477a-b19c-7297ba7ec07c">
+                <!-- IMAGE NOW POINTS TO THE REPO FILE -->
+                <img src="screenshot.png" alt="Zenith Automator Interface">
             </section>
 
             <section>
@@ -305,26 +306,19 @@
     </div>
 
     <script>
-        // MODAL LOGIC
         function handleDownload() {
             const downloadUrl = 'https://github.com/professionalskiddar/Zenith-Automator/releases/download/Download/ZenithAutomator.exe';
-            
-            // Create a ghost link that downloads the file without opening a new tab
             const link = document.createElement('a');
             link.href = downloadUrl;
             link.setAttribute('download', '');
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-
-            // Show prompt
             document.getElementById('support-modal').style.display = 'flex';
         }
         function closeModal() {
             document.getElementById('support-modal').style.display = 'none';
         }
-
-        // GITHUB API LOGIC
         async function updateGitHubStats() {
             const repo = 'professionalskiddar/Zenith-Automator';
             try {
