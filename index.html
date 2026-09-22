@@ -242,7 +242,6 @@
             <p class="tagline">High-speed Discord message mirroring tool and trade alert forwarder. Copy text and graphics across multi-channel environments instantly.</p>
             
             <div class="btn-container">
-                <!-- CHANGED TO FUNCTION CALL -->
                 <button onclick="handleDownload()" class="btn">🚀 Download (.EXE)</button>
                 
                 <div class="github-btn-group">
@@ -308,8 +307,8 @@
     <script>
         // MODAL LOGIC
         function handleDownload() {
-            // 1. Start download (Replace '#' with actual .exe link)
-            window.open('#', '_blank'); 
+            // 1. Start download with the CORRECT link
+            window.open('https://github.com/professionalskiddar/Zenith-Automator/releases/download/Download/ZenithAutomator.exe', '_blank'); 
             // 2. Show prompt
             document.getElementById('support-modal').style.display = 'flex';
         }
